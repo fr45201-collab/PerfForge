@@ -33,6 +33,19 @@ PostgreSQL
 ↓
 React Dashboard
 
-## Status
+## Current Status
 
-🚧 Under Development
+### v0.1.0
+
+Implemented:
+
+- High-resolution timer
+- Function profiling
+- Runtime measurement
+- Example profiling application
+
+Example Output
+
+Function : slow_function
+Calls    : 1
+Runtime  : 22.684 ms
