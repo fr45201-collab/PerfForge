@@ -1,4 +1,5 @@
 #include "../include/profiler.h"
+#include "../include/json_exporter.h"
 
 void slow_function()
 {
@@ -12,18 +13,23 @@ void slow_function()
 
 int main()
 {
-    ProfileRecord record = {0};
+    ProfileRecord profiler = {0};
 
     profiler_start(
-        &record,
+        &profiler,
         "slow_function"
     );
 
     slow_function();
 
-    profiler_stop(&record);
+    profiler_stop(&profiler);
 
-    profiler_print(&record);
+    profiler_print(&profiler);
+
+    export_profile_json(
+        &profiler,
+        "report.json"
+    );
 
     return 0;
 }

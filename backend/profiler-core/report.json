@@ -1,0 +1,5 @@
+{
+  "function_name": "slow_function",
+  "call_count": 1,
+  "elapsed_ms": 24.784
+}
