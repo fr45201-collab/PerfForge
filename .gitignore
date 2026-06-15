@@ -1,0 +1,76 @@
+# ==========================
+# Environment Files
+# ==========================
+
+.env
+.env.*
+!.env.example
+
+# ==========================
+# C Build Artifacts
+# ==========================
+
+*.o
+*.obj
+*.out
+*.a
+*.so
+*.dll
+*.exe
+perfforge_demo
+
+build/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+
+# ==========================
+# Python
+# ==========================
+
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+.venv/
+venv/
+env/
+
+# ==========================
+# Node / React
+# ==========================
+
+node_modules/
+dist/
+coverage/
+
+# ==========================
+# VS Code
+# ==========================
+
+.vscode/
+
+# ==========================
+# Logs
+# ==========================
+
+*.log
+logs/
+
+# ==========================
+# Profiling Reports
+# ==========================
+
+backend/profiler-core/reports/json/*
+backend/profiler-core/reports/csv/*
+backend/profiler-core/reports/txt/*
+
+!.gitkeep
+
+# ==========================
+# OS Files
+# ==========================
+
+.DS_Store
+Thumbs.db
